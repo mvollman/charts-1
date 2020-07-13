@@ -176,3 +176,13 @@ dind:
   enabled: false
   image: docker:19.03-dind
   port: 2375
+
+hpa:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 5
+  metrics: {}
+#  - type: External
+#    external:
+#      metricName: buildkite.queues.k8s.WaitingJobsCount
+#      targetAverageValue: 1
